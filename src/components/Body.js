@@ -35,7 +35,7 @@ const Body = () => {
         // console.log(filterData);
         return filterData;
     }
-    if (allRestaurants.length === 0) {
+    if (allRestaurants?.length === 0) {
         return <Shimmer />;
     }
     return (
