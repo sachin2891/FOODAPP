@@ -52,7 +52,7 @@ const RestaurantCard = () => {
                 <h1 className='font-bold text-2xl '>Other Menu</h1>
                 <ul>
                     {otherMenus.map((otherMenu, index) =>
-                    (<li key={index}>{otherMenu?.card?.info?.name}  - <button className='p-1 m-1 bg-slate-200' onClick={() => {
+                    (<li key={index}>{otherMenu?.card?.info?.name}  - <button className='p-1 m-1 bg-slate-200 border-transparent rounded' onClick={() => {
                         handleAddItem(otherMenu?.card?.info);
                     }}>Add</button></li>)
                     )}
